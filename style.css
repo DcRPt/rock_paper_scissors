@@ -1,0 +1,12 @@
+body {
+    background-color: #3A3B3C;
+}
+
+button {
+    gap: 56px;
+    padding: 8px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 48px;
+}
