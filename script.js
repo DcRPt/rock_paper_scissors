@@ -72,4 +72,22 @@ const getResult = () => {
       resultDisplay.innerHTML = "You chose " + userChoice + " and the computer chose " + computerChoice + ", ITS A DRAW!"
       break
   }
+
+  if (userScore == 5 || computerScore == 5) {
+    const gameoverbutton = document.createElement("button")
+    gameoverbutton.id = "gameover"
+  gameoverbutton.innerHTML = "Try again"
+  gameoverbutton.addEventListener("click", reset)
+  gamegrid.appendChild(gameoverbutton)
+  }
+
+  
 }
+
+const reset = () => {
+    userScore = 0
+    computerScore = 0
+    Score()
+    const gameoverbutton = document.querySelector("#gameover")
+    gameoverbutton.remove ()
+  }

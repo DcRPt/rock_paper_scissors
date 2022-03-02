@@ -1,5 +1,6 @@
 body {
     background-color: #3A3B3C;
+    font-size: 48px;
 }
 
 button {
@@ -8,5 +9,5 @@ button {
     background: none;
     outline: none;
     cursor: pointer;
-    font-size: 48px;
+    font-size: 84px;
 }
